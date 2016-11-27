@@ -1,0 +1,13 @@
+<form ng-submit="userInput()">
+<input type="text" name="first_name" maxlength="100" placeholder="Name" />
+</br>
+<input type="text" name="bio" maxlength="100" placeholder="Bio" />
+</br>
+<input type="text" name="favorite_books" maxlength="100" placeholder="Favorite Books" />
+</br>
+<input type="text" style="width: 200px;" name="favorite_Javascript_library" maxlength="100" placeholder="Favorite Javascript Library" ng-model="uCtrl.lib" />
+</br>
+<input type="submit" value="Submit"/>
+</form>
+
+<p>{{userForm.lib}}</p>

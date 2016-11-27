@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+    <title>Hide A Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="/js/router.js"></script>
+    <script src="/js/controller.js"></script>
+</head>
+
+<body ng-controller="userForm as uCtrl">
+    <a href="#/">Main</a>
+    <a href="#/form">Form</a>
+    <a href="#/profile">Profile</a>
+    </br>
+    <!-- form goes on top -->
+    <div ng-view>
+        {{uCtrl.greeting}}
+    </div>
+    <!-- profile page goes on bottom -->
+    <div>
+    </div>
+</body>
+
+</html>
